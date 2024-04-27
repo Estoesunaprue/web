@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #000000;
+    color: #ffffff; /* Establece el color de texto predeterminado para todo el body */
+   
+}
+
+.nav--logo{
+    cursor: pointer;
+}
+
+.hero{
+    color: #ffffff;
+}
+
+.hero--container {
+    width: 90%; /* Un poco de flexibilidad en el ancho */
+    max-width: 800px;
+    margin: 0 auto; /* Centrado horizontal */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los items horizontalmente en flexbox */
+    text-align: center; /* Asegura que el texto dentro de los elementos sea centrado */
+    gap: 1em;
+    padding: 20px 0; /* Espaciado arriba y abajo dentro del contenedor */
+    opacity: 0;  /* Inicialmente oculto */
+    animation: fadeInUp 1.9s ease forwards;  /* Animación definida abajo */
+}
+
+.hero--title {
+    font-size: 3rem;
+    line-height: 1.2; /* Ajuste de la altura de línea para una mejor legibilidad */
+}
+
+.hero--paragraph {
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Un tamaño más moderado para el texto del párrafo */
+}
+
+.cta {
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.cta:hover{
+    background-color: chartreuse;
+}
+
+.highlight{
+    color: orange;
+}
+
+
+/* Keyframes para la animación */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
